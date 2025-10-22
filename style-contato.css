@@ -1,0 +1,108 @@
+body {
+    font-family: Playfair Display, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbc2db;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: right;
+    color: #020b41;
+    margin-top: 20px;
+    font-family: Nunito, serif;
+    font-weight: 700;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.page-nav ul {
+  background-color: #a6afd0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  align-items: center; 
+  width: 100%; 
+  justify-content: space-evenly; 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 10px 30px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Transição suave na mudança de cor de fundo */
+}
+
+.page-nav ul a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white;    
+}
+
+.page-nav ul a:hover {
+  text-decoration: underline;
+}
+
+.banner-principal {
+  position: relative; 
+  width: 100%; 
+  height: 70vh; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://blog.runrun.it/wp-content/uploads/2023/12/142695-Clusterizacao-DEV-Desenvolvimento-de-software-blog-2.png'); 
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+}
+
+.barra{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(21, 21, 64);
+}
+
+.info-stripe h2 {
+    text-align: center;
+    color: #ffffff; 
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500; 
+    margin: 0; 
+}
+
+.texto-do-banner h2 {
+  font-size: 50px; /* Tamanho da fonte do título */
+  font-weight: bold;
+  margin: 0; /* Remove margens padrão */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.892); /* Sombra para melhor leitura */
+}
+
+
+h2{
+    font-family: 'Inter', serif;
+    font-weight: 5000;
+    color:white;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color: #020b41;}
+
+footer {
+    background-color:#bbc2db;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
