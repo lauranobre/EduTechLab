@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style-contato.css">
-    <link rel="stylesheet" href="servico.html">
-    <link rel="stylesheet" href="blog.html">
-    <link rel="stylesheet" href="contato.html">
+    
+    <link rel="stylesheet" href="blog-style.css"> 
+    
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <title>EduTechLab</title>
+    <title>EduTechLab - Blog</title>
+
 </head>
 <body>
 
@@ -20,30 +21,193 @@
             <img src="logo.png" alt="imagem de logo" class="logo">
             <nav class="page-nav">
                 <ul>
-                    <li><a href="#Contato">Contato</a></li>
-                    <li><a href="#Serviços">Serviços</a></li>
-                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </header>
 
          <section class="banner-principal">
-      <div class="banner-imagem">
-        <div class="banner-conteudo">
-          <h2>
-            Desenvolvimento de tecnologias educacionais e cursos online voltados
-            para <br />
-            capacitação profissional, focados em desenvolvimento de software e
-            design.
-          </h2>
+           <div class="banner-imagem">
+             <div class="banner-conteudo">
+               <h2>
+                 Desenvolvimento de tecnologias educacionais e cursos online voltados
+                 para <br />
+                 capacitação profissional, focados em desenvolvimento de software e
+                 design.
+               </h2>
+             </div>
+           </div>
+         </section>
+    
+    <section class="barra">
+        <div class="barra">
+            <h3>ARTIGOS:</h3>
         </div>
-      </div>
     </section>
-    <div class="barra">Blog</div>
+    
+    <section class="lista-artigos">
+        <h2>ARTIGOS DISPONÍVEIS</h2>
+        <ul>
+            <li><a href="#artigo1">Tutorial de Desenvolvimento: Lógica de Programação, Boas Práticas, JavaScript e Git</a></li>
+            <li><a href="#artigo2">A Revolução Silenciosa: Como a IA Está Moldando o Design e o Desenvolvimento</a></li>
+            <li><a href="#artigo3">Além da Tela: A Expansão do UX para o Texto e a Voz</a></li>
+        </ul>
+    </section>
 
-        <footer>
-            <p>&copy; 2025 EduTechLab | Autoras do Site: Laura Nobre e Luiza Stecca.</p>
-        </footer>
+    <form action="#" method="get" class="search-container">
+      <label for="search-box" class="sr-only">Pesquisar</label>
+        <input type="search" id="search-box" name="q" placeholder="O que você procura?">
+        <button type="submit" aria-label="Buscar">🔍</button>
+
+</form>
+
+</form>
+    
+    <main class="artigos-container">
+
+        <article class="artigo-completo" id="artigo1">
+            <h2>Tutorial de Desenvolvimento: Lógica de Programação, Boas Práticas, JavaScript e Git</h2>
+            <img src="https://blog.gokursos.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-1200x800.jpg" alt="Banner do artigo sobre Desenvolvimento de Software" class="artigo-imagem">
+
+            <p>Ingressar no mundo do desenvolvimento de software pode parecer intimidador, mas com os fundamentos corretos, a jornada torna-se clara e recompensadora. <br> Este guia foca nos pilares essenciais para qualquer aspirante a desenvolvedor: a lógica por trás do código, as práticas que garantem sua qualidade e as ferramentas iniciais para construir e gerenciar seus projetos.</p>
+
+            <h3>1. O Pilar de Tudo: Lógica de Programação</h3>
+            <p>Antes de escrever uma única linha de código, você precisa aprender a "pensar como um programador". <br> A lógica de programação é o processo de organizar instruções de forma coerente para que um computador possa executar uma tarefa.</p>
+            <p>É como uma receita de bolo: você precisa da sequência exata (algoritmo) e dos ingredientes certos (dados). Os conceitos fundamentais incluem:</p>
+            <ul>
+                <li><strong>Variáveis:</strong> "Caixas" para armazenar informações (números, textos, etc.).</li>
+                <li><strong>Condicionais (<code>if</code>/<code>else</code>):</strong> Tomada de decisão. "Se" uma condição for verdadeira, faça A; "senão", faça B.</li>
+                <li><strong>Loops (<code>for</code>/<code>while</code>):</strong> Repetição de tarefas. "Enquanto" uma condição for verdadeira, continue executando uma ação.</li>
+                <li><strong>Funções:</strong> Blocos de código reutilizáveis que realizam uma tarefa específica.</li>
+            </ul>
+            <p>Dominar a lógica é mais importante do que decorar a sintaxe de uma linguagem.</p>
+
+            <h3>2. Boas Práticas: O Código Limpo (Clean Code)</h3>
+            <p>Escrever código que funciona é apenas o começo. Escrever código que outros (ou você mesmo no futuro) possam entender é o que define um profissional. <br> Boas práticas garantem que o software seja manutenível, escalável e fácil de depurar.</p>
+            <ul>
+                <li><strong>Nomes Significativos:</strong> Chame suas variáveis e funções de forma descritiva. Em vez de <code>x</code>, use <code>idadeDoUsuario</code>.</li>
+                <li><strong>DRY (Don't Repeat Yourself):</strong> Não repita o mesmo bloco de código várias vezes. Se precisar, crie uma função.</li>
+                <li><strong>KISS (Keep It Simple, Stupid):</strong> Prefira soluções simples e diretas. Complexidade desnecessária gera bugs.</li>
+                <li><strong>Comentários:</strong> Use-os para explicar o "porquê" de um código complexo, não o "o quê". O código deve se autoexplicar.</li>
+            </ul>
+
+            <h3>3. Primeiros Passos com JavaScript</h3>
+            <p>JavaScript (JS) é a linguagem de programação da web. <br> É a escolha perfeita para iniciantes por ser versátil (roda no navegador, em servidores e até em aplicativos) e ter uma vasta comunidade.</p>
+            <p>Para começar, você só precisa do seu navegador:</p>
+            <ol>
+                <li>Abra seu navegador (Chrome, Firefox, etc.).</li>
+                <li>Clique com o botão direito em qualquer lugar da página e selecione "Inspecionar".</li>
+                <li>Vá para a aba "Console".</li>
+            </ol>
+            <p>Este é um ambiente JavaScript interativo. Tente seu primeiro comando:</p>
+            <pre><code>console.log("Olá, Mundo!");</code></pre>
+            <p>Você acabou de executar seu primeiro código! Agora, tente usar a lógica:</p>
+            <pre><code>let nome = "Maria";
+let idade = 25;
+if (idade >= 18) {
+  console.log(nome + " é maior de idade.");
+} else {
+  console.log(nome + " é menor de idade.");
+}</code></pre>
+
+            <h3>4. O Essencial do Git: Controle de Versão</h3>
+            <p>Imagine escrever um longo documento e, acidentalmente, apagar um capítulo importante sem ter como recuperá-lo. <br> O Git resolve isso para o código.</p>
+            <p>Git é um sistema de controle de versão. Ele "tira fotos" (chamadas commits) do seu projeto sempre que você atinge um ponto estável. Isso permite que você:</p>
+            <ul>
+                <li>Volte a versões anteriores se algo der errado.</li>
+                <li>Entenda o que mudou e quem mudou.</li>
+                <li>Trabalhe em equipe sem sobrescrever o trabalho dos outros.</li>
+            </ul>
+            <p><strong>Fluxo básico do Git (com GitHub/GitLab):</strong></p>
+            <ul>
+                <li><code>git init</code>: Inicia o Git em uma pasta.</li>
+                <li><code>git add .</code>: Adiciona todos os arquivos modificados para a "área de preparação".</li>
+                <li><code>git commit -m "Minha primeira alteração"</code>: Tira a "foto" (commit) com uma mensagem descritiva.</li>
+                <li><code>git push</code>: Envia seus commits para um repositório online (como o GitHub), criando um backup e permitindo a colaboração.</li>
+            </ul>
+
+            <h3>Conclusão</h3>
+            <p>Aprender a desenvolver é uma maratona, não uma corrida. <br> Concentre-se em solidificar sua lógica, adote boas práticas desde o início, pratique com JavaScript e use o Git para proteger seu progresso. <br> A consistência é a chave para o sucesso.</p>
+        </article>
+
+        <article class="artigo-completo" id="artigo2">
+            <h2>A Revolução Silenciosa: Como a IA Está Moldando o Design e o Desenvolvimento</h2>
+            <img src="https://www.conectaoeste.com.br/images/noticias/58087/c53f2ea4af9206d91987e0bffbb98887.webp" alt="Banner do artigo sobre Inteligência Artificial" class="artigo-imagem">
+
+            <p>A Inteligência Artificial (IA) deixou de ser uma promessa futurista para se tornar uma ferramenta prática e indispensável no arsenal de designers e desenvolvedores. <br> Mais do que automação, a IA atua como uma parceira criativa e analítica, otimizando fluxos de trabalho complexos e permitindo a criação de experiências de usuário radicalmente personalizadas.</p>
+
+            <h3>Otimizando Fluxos de Trabalho: O Co-piloto de IA</h3>
+            <p>A maior mudança imediata da IA é a automação de tarefas repetitivas e a aceleração de processos complexos, permitindo que os profissionais se concentrem em problemas estratégicos.</p>
+
+            <p><strong>No Design (UX/UI):</strong></p>
+            <ul>
+                <li><strong>Geração de Conceitos:</strong> Ferramentas de IA generativa (como Midjourney ou DALL-E) podem criar moodboards, paletas de cores e até mesmo mockups iniciais a partir de simples descrições de texto, acelerando a fase de ideação.</li>
+                <li><strong>Design de Baixa Fidelidade:</strong> Plugins de IA em ferramentas como o Figma podem gerar layouts básicos, preencher interfaces com dados fictícios (mas realistas) e até sugerir melhorias de acessibilidade.</li>
+                <li><strong>Testes de Usabilidade:</strong> A IA pode analisar gravações de testes de usuário, identificando padrões de frustração (como "rage clicks") e gerando relatórios de heatmap (mapas de calor) sem intervenção humana.</li>
+            </ul>
+
+            <p><strong>No Desenvolvimento:</strong></p>
+            <ul>
+                <li><strong>Geração e Conclusão de Código:</strong> Plataformas como o GitHub Copilot ou o ChatGPT atuam como assistentes de programação, sugerindo linhas de código, completando funções e até escrevendo testes unitários.</li>
+                <li><strong>Depuração (Debugging):</strong> A IA pode analisar stack traces complexos e sugerir a causa provável de um bug, economizando horas de investigação manual.</li>
+                <li><strong>Refatoração:</strong> Modelos de IA podem sugerir como reescrever código "sujo" (complexo ou ineficiente) para torná-lo mais limpo e performático, seguindo as melhores práticas do setor.</li>
+            </ul>
+
+            <h3>Criando Experiências Mais Personalizadas</h3>
+            <p>Se a otimização de fluxo é o "como", a personalização é o "porquê". A IA permite que produtos digitais se adaptem a cada usuário individualmente, em tempo real.</p>
+            <p>O modelo "tamanho único" está morrendo. A IA analisa o comportamento do usuário (cliques, tempo gasto, histórico de compras, preferências) para moldar a experiência:</p>
+            <ul>
+                <li><strong>Conteúdo Dinâmico:</strong> Plataformas de streaming (Netflix, Spotify) usam IA para recomendar o próximo filme ou música com uma precisão impressionante. Isso agora se estende a qualquer aplicativo: a interface pode priorizar recursos que o usuário mais utiliza.</li>
+                <li><strong>E-commerce Inteligente:</strong> A IA não apenas sugere produtos ("quem comprou isso também comprou aquilo"), mas pode ajustar os resultados da busca e até mesmo o layout da página de acordo com as afinidades do cliente.</li>
+                <li><strong>Interfaces Adaptativas:</strong> O futuro do design é uma interface que se ajusta. A IA pode alterar o tamanho da fonte para usuários com dificuldade de visão, simplificar a navegação para usuários iniciantes ou destacar recursos avançados para power users.</li>
+            </ul>
+
+            <h3>Conclusão</h3>
+            <p>A integração da Inteligência Artificial não se trata de substituir designers ou desenvolvedores, mas de aumentar suas capacidades. <br> A IA assume o trabalho repetitivo e analítico, liberando os humanos para o que fazem de melhor: empatia, criatividade estratégica e tomada de decisão complexa. <br> O profissional do futuro não será aquele que apenas sabe codar ou desenhar, mas aquele que sabe como usar a IA para fazer ambos de forma mais inteligente.</p>
+        </article>
+        
+        <article class="artigo-completo" id="artigo3">
+            <h2>Além da Tela: A Expansão do UX para o Texto e a Voz</h2>
+            <img src="https://img.freepik.com/premium-vector/ui-ux-design-smartphone-vector-concept_118813-15547.jpg" alt="Banner do artigo sobre UX Writing e Voz" class="artigo-imagem">
+
+            <p>O Design de Experiência do Usuário (UX) amadureceu. Se antes o foco estava primariamente em fluxos visuais e na arquitetura da informação, o mercado digital agora reconhece que br a experiência é moldada por componentes muito mais sutis e humanos: as palavras e a conversa.</p>
+            <p>Duas áreas, em especial, estão em rápido crescimento e definindo o futuro das interações digitais: UX Writing (Redação para UX) e Voice Design (Design de Interface de Voz).</p>
+
+            <h3>UX Writing: As Palavras como Interface</h3>
+            <p>UX Writing não é marketing. Não se trata de vender um produto, mas de guiar o usuário através dele. É o design da conversa entre o produto e a pessoa. <br> Um bom UX Writing é invisível quando funciona e terrivelmente frustrante quando falha.</p>
+
+            <p><strong>Por que está em alta?</strong> Empresas perceberam que um texto confuso em um botão, uma mensagem de erro genérica ("Erro 404") ou um e-mail de confirmação robótico podem levar ao abandono do produto. <br> A clareza gera confiança e eficiência.</p>
+
+            <p><strong>O Papel do UX Writer:</strong></p>
+            <ul>
+                <li><strong>Microcopy:</strong> São os pequenos textos que guiam o usuário: o texto de um botão ("Comprar" vs. "Adicionar ao Carrinho"), o placeholder de um campo de formulário, uma dica de ferramenta.</li>
+                <li><strong>Tom de Voz:</strong> O UX Writer define a personalidade da marca. O aplicativo fala de forma formal? É divertido? É encorajador? Essa voz deve ser consistente.</li>
+                <li><strong>Mensagens de Sucesso e Erro:</strong> Transformar uma mensagem de erro de um beco sem saída ("Falha na operação") em um caminho útil ("Não foi possível conectar. Verifique sua rede Wi-Fi e tente novamente.") é crucial.</li>
+            </ul>
+            <p>A regra de ouro do UX Writing é: ser claro, conciso e útil.</p>
+
+            <h3>Voice Design (VUI): A Interface Invisível</h3>
+            <p>O Design de Interface de Voz (VUI) é o design de sistemas com os quais interagimos falando. Pense na Alexa, Google Assistente, Siri ou nas centrais de atendimento automatizadas <br> (URAs) que realmente funcionam.</p>
+            <p>Com a proliferação de smart speakers, carros conectados e a busca por interações hands-free (mãos livres), desenhar para a voz tornou-se uma necessidade.</p>
+
+            <p><strong>Por que é um desafio?</strong> Diferente das interfaces gráficas (GUI), a voz não tem "botões" ou "menus" visuais. O designer precisa:</p>
+            <ul>
+                <li><strong>Antecipar a Intenção:</strong> O usuário pode pedir a mesma coisa de dezenas de maneiras diferentes ("Aumentar o volume", "Está muito alto", "Som +").</li>
+                <li><strong>Gerenciar o Fluxo da Conversa:</strong> Como o sistema pede esclarecimentos sem ser irritante? Como ele informa que não entendeu?</li>
+                <li><strong>Lidar com a Descoberta:</strong> Como o usuário descobre o que o sistema é capaz de fazer sem um menu para ler?</li>
+            </ul>
+            <p>O objetivo do Voice Design é tornar a interação tão natural e fluida quanto conversar com outro ser humano.</p>
+
+            <h3>Conclusão: O Futuro do UX é Conversacional</h3>
+            <p>Tanto o UX Writing quanto o Voice Design sinalizam uma mudança fundamental: estamos migrando de interações baseadas em cliques para interações baseadas em conversa. <br> O valor não está mais apenas na eficiência visual, but na qualidade da comunicação. Para profissionais de UX e empresas, investir nessas áreas não é mais uma opção, <br> mas uma necessidade para criar produtos que pareçam verdadeiramente humanos e úteis no mercado digital moderno.</p>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 EduTechLab | Autoras do Site: Laura Nobre e Luiza Stecca.</p>
+    </footer>
 
 </body>
 </html>

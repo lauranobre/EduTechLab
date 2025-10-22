@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style-contato.css">
-    <link rel="stylesheet" href="servico.html">
+    <!-- <link rel="stylesheet" href="servico.html">
     <link rel="stylesheet" href="blog.html">
-    <link rel="stylesheet" href="contato.html">
+    <link rel="stylesheet" href="contato.html"> -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <title>EduTechLab</title>
@@ -20,9 +20,9 @@
             <img src="logo.png" alt="imagem de logo" class="logo">
             <nav class="page-nav">
                 <ul>
-                    <li><a href="#Contato">Contato</a></li>
-                    <li><a href="#Serviços">Serviços</a></li>
-                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,8 +38,75 @@
         </div>
       </div>
     </section>
-    <div class="barra">contato</div>
+    
+    <section class="barra">
+      <div class="barra">
+        <h2>Contato</h2>
+      </div>
+    </section>
 
+    <div class="container-pai">
+
+    <section class="nossa-historia">
+      <div clss="historia">
+        <h2>Nossa História</h2>
+        <h3>
+          A EduTechLab nasceu em 2020, da união entre educadores, desenvolvedores e <br> designers que acreditavam que o ensino técnico precisava evoluir.
+          <br> O projeto começou com pequenas aulas online, voltadas para capacitação prática, e <br> rapidamente cresceu com o apoio de uma comunidade que buscava formação <br> de qualidade e relevância profissional.
+          <br> Hoje, a EduTechLab se tornou referência em educação tecnológica moderna, unindo teoria, prática e mentoria em um mesmo ecossistema digital.
+        </h3>
+      </div>
+    </section>
+
+  <section class="nossa-equipe">
+      <div class="equipe">
+        <h2>Nossa Equipe</h2>
+        <h3>
+          A equipe da EduTechLab é formada por professores, desenvolvedores, designers e mentores com ampla experiência acadêmica e prática de mercado.
+          <br> Cada integrante compartilha o mesmo propósito: formar profissionais criativos, críticos e preparados para o futuro.
+          <br> Com especializações em diversas áreas — de engenharia de software a design de experiência — nossa equipe atua de forma colaborativa, garantindo qualidade, inovação e atualização constante em todos os cursos.
+        </h3>
+      </div>
+    </section>
+
+    </div>
+    
+    <section class="formulario-contato">
+      <div class="formulario">
+        <h2>Formulário para Contato</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <div class="container-botoes">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="google-maps">
+    <div>
+      <h2>Localização</h2>
+        <div class="maps"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.4338525932264!2d-46.686856232290545!3d-23.5778360808617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576d1b6136f3%3A0xd07acf864bcd7990!2sAv.%20Brig.%20Faria%20Lima%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1761152840808!5m2!1spt-BR!2sbr" 
+                  width="600" 
+                  height="450" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+    </div>
+  </section>
 
         <footer>
             <p>&copy; 2025 EduTechLab | Autoras do Site: Laura Nobre e Luiza Stecca.</p>

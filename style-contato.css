@@ -1,3 +1,4 @@
+/*INDEX.HTML*/
 body {
     font-family: Playfair Display, serif;
     margin: 0;
@@ -63,16 +64,13 @@ h1 {
 
 .barra{
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: rgb(21, 21, 64);
-}
-
-.info-stripe h2 {
     text-align: center;
     color: #ffffff; 
     font-family: 'Nunito', sans-serif;
     font-weight: 500; 
-    margin: 0; 
+    margin: 0;
 }
 
 .texto-do-banner h2 {
@@ -81,7 +79,6 @@ h1 {
   margin: 0; /* Remove margens padrão */
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.892); /* Sombra para melhor leitura */
 }
-
 
 h2{
     font-family: 'Inter', serif;
@@ -94,6 +91,95 @@ p{
     font-weight: 400;
     color: #020b41;}
 
+
+/*CONTATO.HTML*/
+.nossa-historia {
+    background-color: #a6afd0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.equipe {
+    background-color: #a6afd0;
+    padding: 20px;
+    border-radius: 8px;
+} 
+
+.equipe h2, .nossa-historia h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+.equipe h3, .nossa-historia h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #020b41;
+}
+
+.container-pai { /*Isso aqui coloca as caixas de equipe e história do lado*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin: 40px auto;
+}
+
+.formulario {
+    background-color: #a6afd0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+form button {
+    background-color: #020b41;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+
+.container-botoes {
+  display: flex; 
+  gap: 10px;    
+}
+
+.container-botoes button {
+  flex: 1;
+}
+
 footer {
     background-color:#bbc2db;
     color: white;
@@ -105,4 +191,336 @@ footer {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     margin-top: 20px;
+}
+
+img.artigo-imagem{
+    width: 450px;
+    padding: 10px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    display: block;      /* Faz a imagem se comportar como um bloco */
+    margin-left: auto;   /* Margem esquerda automática */
+    margin-right: auto;  /* Margem direita automática */
+    width: 30%;
+}
+
+.container-da-imagem {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente no centro */
+  align-items: center; 
+  text-align: center;    /* Alinha verticalmente no centro (opcional) */
+}
+
+.artigo-completo{
+    background-color: #A6AFD0;
+    box-shadow: rgba(red, green, blue, alpha);
+}
+
+.artigo-completo {
+
+    margin-bottom: 60px; 
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.barra{
+    margin-bottom: 60px; 
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    font-size: 150%;
+}
+
+.google-maps {
+  
+  max-width: 1000px;
+  margin: 40px auto; 
+  padding: 20px;   
+  box-sizing: border-box;
+  background-color: #a6afd0; 
+  padding: 20px;          
+  border-radius: 8px;      
+}
+
+.google-maps h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.maps iframe {
+  width: 100%;    
+  height: 450px; 
+  border: none;   
+  border-radius: 8px; 
+}
+
+/*BLOG.HTML*/
+.lista-artigos {
+    margin-bottom: 60px;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 30px;
+    font-size: 100%;
+    background-color: #A6AFD0; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 30px; 
+    text-align: center; /* MANTIDO (Agora vai centralizar tudo) */
+}
+
+/* Estilo para o Título (ARTIGOS DISPONÍVEIS) */
+.lista-artigos h2 {
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff; 
+    font-weight: 800;
+    text-transform: uppercase; 
+    margin-bottom: 25px; 
+}
+
+.lista-artigos ul {
+    list-style-type: none; 
+    padding-left: 0;       
+}
+
+.lista-artigos ul li {
+    margin-bottom: 15px;
+}
+
+.lista-artigos ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #020b41; 
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px; 
+}
+
+.lista-artigos ul li a:hover {
+    text-decoration: underline; 
+}
+
+/*BARRA DE PESQUISA*/
+.search-container {
+  display: flex; 
+  max-width: 700px; 
+  margin: 40px auto;
+  border-radius: 50px; 
+  overflow: hidden; 
+  background-color: #ffffff; 
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Estilo do CAMPO de preenchimento */
+.search-container input[type="search"] {
+  flex: 1; 
+  border: none;
+  outline: none; 
+  padding: 15px 25px; 
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif; 
+  color: #333;
+}
+
+/* Estilo do BOTÃO (lupa) */
+.search-container button {
+  background-color: #020b41;
+  color: white; 
+  border: none;
+  cursor: pointer;
+  padding: 0 25px; 
+  font-size: 18px; 
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #04167a; 
+}
+
+.search-container input[type="search"]::placeholder {
+  color: #999;
+}
+
+/*SERVIÇOS*/
+/*Carrossel*/
+.css-carousel {
+  position: relative; 
+  width: 100%;
+  height: 70vh; 
+  min-height: 450px;
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+.css-carousel input[type="radio"] {
+  display: none;
+}
+
+.slides-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-item {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  opacity: 0; 
+  transition: opacity 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#slide1:checked ~ .slides-wrapper .slide-item:nth-child(1) {
+  opacity: 1;
+}
+#slide2:checked ~ .slides-wrapper .slide-item:nth-child(2) {
+  opacity: 1;
+}
+#slide3:checked ~ .slides-wrapper .slide-item:nth-child(3) {
+  opacity: 1;
+}
+
+.slide-navegacao {
+  position: absolute; 
+  bottom: 25px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  display: flex; 
+  z-index: 10;
+}
+
+.nav-bolinha {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; 
+  background-color: #fff;
+  opacity: 0.6;
+  margin: 0 5px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-bolinha:hover {
+  opacity: 1;
+}
+
+#slide1:checked ~ .slide-navegacao label[for="slide1"],
+#slide2:checked ~ .slide-navegacao label[for="slide2"],
+#slide3:checked ~ .slide-navegacao label[for="slide3"] {
+  background-color: #020b41; 
+  opacity: 1;
+}
+
+.arrow-prev,
+.arrow-next {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 10; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  background-color: rgba(2, 11, 65, 0.5); 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; 
+  font-weight: bold;
+  font-family: monospace; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none; 
+}
+
+.arrow-prev:hover,
+.arrow-next:hover {
+  background-color: rgba(2, 11, 65, 0.8); 
+}
+
+.arrow-prev {
+  left: 25px;
+}
+.arrow-prev::before {
+  content: '<';
+}
+
+.arrow-next {
+  right: 25px;
+}
+.arrow-next::before {
+  content: '>';
+}
+
+.mentoria-texto {
+  background: linear-gradient(45deg, #020b41, #a6afd0);
+  color: white;
+  padding: 40px;
+  box-sizing: border-box; 
+}
+
+.mentoria-texto h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mentoria-texto p {
+  font-size: 1.25rem; 
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.mentoria-professor {
+  color: white;
+  overflow: hidden; 
+  background-color: #020b41; 
+}
+
+.mentoria-professor img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: top; 
+  filter: brightness(0.7); 
+  z-index: 1;
+}
+
+.info-professor {
+  position: relative; 
+  z-index: 2; /* Camada 2 (na frente) */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px; 
+}
+
+.info-professor h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.info-professor p {
+  font-size: 1.25rem;
+  font-style: italic;
 }

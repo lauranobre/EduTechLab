@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style-contato.css">
-    <link rel="stylesheet" href="servico.html">
+    <!-- <link rel="stylesheet" href="servico.html">
     <link rel="stylesheet" href="blog.html">
-    <link rel="stylesheet" href="contato.html">
+    <link rel="stylesheet" href="contato.html"> -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <title>EduTechLab</title>
@@ -20,9 +20,9 @@
             <img src="logo.png" alt="imagem de logo" class="logo">
             <nav class="page-nav">
                 <ul>
-                    <li><a href="#Contato">Contato</a></li>
-                    <li><a href="#Serviços">Serviços</a></li>
-                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="servico.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,7 +39,59 @@
         </div>
       </div>
     </section>
-    <div class="barra">Serviços</div>
+    
+    <section class="barra">
+      <div class="barra">
+        <h3>SERVIÇOS</h3>
+      </div>
+    </section>
+
+    <section class="carrossel-mentorias css-carousel">
+
+  <input type="radio" name="slide-radio" id="slide1" checked>
+  <input type="radio" name="slide-radio" id="slide2">
+  <input type="radio" name="slide-radio" id="slide3">
+
+  <div class="slides-wrapper">
+
+    <div class="slide-item mentoria-texto">
+      <h2>Mentoria Personalizada</h2>
+      <p>Além dos cursos, a EduTechLab oferece mentorias exclusivas com professores reais, altamente capacitados e atuantes no mercado de tecnologia e design. <br>
+        As mentorias são agendadas por horário, proporcionando um acompanhamento personalizado e direcionado às necessidades de cada aluno. 
+        <br> Nelas, o estudante pode tirar dúvidas, receber orientações de carreira, revisar projetos e desenvolver portfólios profissionais com feedback especializado.
+      </p>
+      
+      <label for="slide2" class="arrow-next"></label>
+    </div>
+
+    <div class="slide-item mentoria-professor">
+      <img src="https://blog.conexia.com.br/wp-content/uploads/2021/05/post_thumbnail-7805cacb077b087cd73393d46920ca74.jpeg" alt="Mentor Carlos Silva">
+      <div class="info-professor">
+        <h3>Carlos Silva</h3>
+        <p>Especialista em Desenvolvimento Full-Stack</p>
+      </div>
+      
+      <label for="slide1" class="arrow-prev"></label>
+      <label for="slide3" class="arrow-next"></label>
+    </div>
+
+    <div class="slide-item mentoria-professor">
+      <img src="https://www.ambersistemas.com.br/wp-content/uploads/2017/03/Tecnologia-e-educacao-uma-aliada-do-professor.jpg.jpg" alt="Mentora Ana Beatriz">
+      <div class="info-professor">
+        <h3>Ana Beatriz</h3>
+        <p>Especialista em UX/UI Design</p>
+      </div>
+      
+      <label for="slide2" class="arrow-prev"></label>
+    </div>
+
+  </div> <div class="slide-navegacao">
+    <label for="slide1" class="nav-bolinha"></label>
+    <label for="slide2" class="nav-bolinha"></label>
+    <label for="slide3" class="nav-bolinha"></label>
+  </div>
+  
+</section>
 
         <footer>
             <p>&copy; 2025 EduTechLab | Autoras do Site: Laura Nobre e Luiza Stecca.</p>
